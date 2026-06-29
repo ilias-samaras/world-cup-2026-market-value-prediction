@@ -71,3 +71,22 @@ predictions_2026_targetB.csv  # Target B — absolute €-gain ranking
 feature_importance.png        # permutation importance (MLP)
 requirements.txt
 ```
+## Data sources & licenses
+
+- **Fjelstul World Cup Database** — © 2023 Joshua C. Fjelstul, Ph.D.,
+  licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
+  Source: https://github.com/jfjelstul/worldcup
+  Files used: squads.csv, players.csv, goals.csv, player_appearances.csv, qualified_teams.csv.
+  Modifications: filtered to the 2014/2018/2022 tournaments and linked to Transfermarkt
+  data via name + date-of-birth matching.
+
+- **Football Data from Transfermarkt** (David Cariboo) —
+  licensed [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (public domain).
+  Source: https://www.kaggle.com/datasets/davidcariboo/player-scores
+  Files used: players_transf.csv, player_valuations.csv, transfers.csv.
+
+- **mundial_squads.csv** — compiled by us from official FIFA sources (2026 squads).
+
+Because this project redistributes data from the Fjelstul World Cup Database (CC-BY-SA 4.0),
+the dataset files in this repository are released under the same **CC-BY-SA 4.0** license.
+The source code is © the authors.
